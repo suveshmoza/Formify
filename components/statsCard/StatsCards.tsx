@@ -16,7 +16,7 @@ export function StatsCards(props: StatsCardProps) {
 		<div className="w-full pt-8 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
 			<StatsCard
 				title="Total Visits"
-				icon={<LuView className="text-blue-400" />}
+				icon={<LuView className="text-2xl text-blue-400" />}
 				helperText="All time form visits"
 				value={data?.visits.toLocaleString() || ''}
 				loading={loading}
@@ -24,7 +24,7 @@ export function StatsCards(props: StatsCardProps) {
 			/>
 			<StatsCard
 				title="Total Submissions"
-				icon={<FaWpforms className="text-yellow-400" />}
+				icon={<FaWpforms className="text-2xl text-yellow-400" />}
 				helperText="All time form submissions"
 				value={data?.visits.toLocaleString() || ''}
 				loading={loading}
@@ -32,7 +32,7 @@ export function StatsCards(props: StatsCardProps) {
 			/>
 			<StatsCard
 				title="Submission Rate"
-				icon={<HiCursorClick className="text-green-400" />}
+				icon={<HiCursorClick className="text-2xl text-green-400" />}
 				helperText="Visits that resulted in form submission"
 				value={data?.visits.toLocaleString() + '%' || ''}
 				loading={loading}
@@ -40,7 +40,7 @@ export function StatsCards(props: StatsCardProps) {
 			/>
 			<StatsCard
 				title="Bounce Rate"
-				icon={<TbArrowBounce className="text-red-500" />}
+				icon={<TbArrowBounce className="text-2xl text-red-500" />}
 				helperText="Visits without interacting"
 				value={data?.visits.toLocaleString() + '%' || ''}
 				loading={loading}

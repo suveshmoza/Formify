@@ -28,9 +28,9 @@ export function FormCard({ form }: { form: Form }) {
 					{formatDistance(form.createdAt, new Date(), { addSuffix: true })}
 					{!form.published && (
 						<span className="flex items-center gap-2">
-							<LuView className="text-muted-foreground" />
+							<LuView className="text-xl text-muted-foreground" />
 							<span>{form.visits.toLocaleString()}</span>
-							<FaWpforms className="text-muted-foreground" />
+							<FaWpforms className="text-xl text-muted-foreground" />
 							<span>{form.submissions.toLocaleString()}</span>
 						</span>
 					)}
