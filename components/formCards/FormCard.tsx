@@ -49,7 +49,11 @@ export function FormCard({ form }: { form: Form }) {
 					</Button>
 				)}
 				{!form.published && (
-					<Button asChild className="group w-full mt-2 text-md gap-2">
+					<Button
+						asChild
+						variant={'secondary'}
+						className="group w-full mt-2 text-md gap-2"
+					>
 						<Link href={`/builder/${form.id}`}>
 							Edit form
 							<FaEdit />
