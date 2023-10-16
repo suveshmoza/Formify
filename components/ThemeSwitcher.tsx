@@ -14,7 +14,7 @@ function ThemeSwitcher() {
 	if (!mounted) return null;
 	return (
 		<Tabs defaultValue={theme}>
-			<TabsList className="border">
+			<TabsList className="border border-muted-foreground">
 				<TabsTrigger value="light" onClick={() => setTheme('light')}>
 					<SunIcon className="h-[1.2rem] w-[1.2rem]" />
 				</TabsTrigger>

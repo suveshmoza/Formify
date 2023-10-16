@@ -132,7 +132,7 @@ function FormBuilder({ form }: { form: Form }) {
 						)}
 					</div>
 				</nav>
-				<div className="flex w-full flex-grow items-center justify-center relative overflow-y-auto h-[calc(100vh-123px)] bg-accent bg-[url(/paper.svg)] dark:bg-[url(/paper-dark.svg)]">
+				<div className="flex w-full flex-grow items-center justify-center relative overflow-y-auto h-[calc(100vh-130px)] bg-accent bg-[url(/paper.svg)] dark:bg-[url(/paper-dark.svg)]">
 					<Designer />
 				</div>
 			</main>
