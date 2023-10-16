@@ -1,6 +1,6 @@
+import { FormElement } from '../formElements/FormElements';
+import { Button } from '../ui/button';
 import { useDraggable } from '@dnd-kit/core';
-import { FormElement } from './FormElements';
-import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 
 function SidebarBtnElement({ formElement }: { formElement: FormElement }) {
@@ -12,16 +12,17 @@ function SidebarBtnElement({ formElement }: { formElement: FormElement }) {
 			isDesignerBtnElement: true,
 		},
 	});
+
 	return (
 		<Button
 			ref={draggable.setNodeRef}
 			variant={'outline'}
-			{...draggable.listeners}
-			{...draggable.attributes}
 			className={cn(
 				'flex flex-col gap-2 h-[120px] w-[120px] cursor-grab',
 				draggable.isDragging && 'ring-2 ring-primary'
 			)}
+			{...draggable.listeners}
+			{...draggable.attributes}
 		>
 			<Icon className="h-8 w-8 text-primary cursor-grab" />
 			<p className="text-xs">{label}</p>

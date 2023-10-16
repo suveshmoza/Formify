@@ -1,11 +1,5 @@
 'use client';
 
-import { Form } from '@prisma/client';
-import React, { useEffect, useState } from 'react';
-import PreviewDialogBtn from './PreviewDialogBtn';
-import PublishFormBtn from './PublishFormBtn';
-import SaveFormBtn from './SaveFormBtn';
-import Designer from './Designer';
 import {
 	DndContext,
 	MouseSensor,
@@ -13,15 +7,21 @@ import {
 	useSensor,
 	useSensors,
 } from '@dnd-kit/core';
-import DragOverlayWrapper from './DragOverlayWrapper';
-import useDesigner from './hooks/useDesigner';
-import { ImSpinner2 } from 'react-icons/im';
-import { Input } from './ui/input';
-import { Button } from './ui/button';
-import { toast } from './ui/use-toast';
+import { Form } from '@prisma/client';
 import Link from 'next/link';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import { useEffect, useState } from 'react';
 import Confetti from 'react-confetti';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import { ImSpinner8 } from 'react-icons/im';
+import Designer from '../Designer/Designer';
+import DragOverlayWrapper from '../DragOverlayWrapper';
+import PreviewDialogBtn from '../btn/PreviewDialogBtn';
+import PublishFormBtn from '../btn/PublishFormBtn';
+import SaveFormBtn from '../btn/SaveFormBtn';
+import useDesigner from '../hooks/useDesigner';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import { toast } from '../ui/use-toast';
 
 function FormBuilder({ form }: { form: Form }) {
 	const { setElements, setSelectedElement } = useDesigner();
@@ -53,8 +53,8 @@ function FormBuilder({ form }: { form: Form }) {
 
 	if (!isReady) {
 		return (
-			<div className="flex flex-col items-center justify-center w-full h-full">
-				<ImSpinner2 className="animate-spin h-12 w-12" />
+			<div className="flex flex-col items-center justify-center w-full h-[calc(100vh-60px)]">
+				<ImSpinner8 className="animate-spin h-12 w-12" />
 			</div>
 		);
 	}
@@ -70,9 +70,9 @@ function FormBuilder({ form }: { form: Form }) {
 					recycle={false}
 					numberOfPieces={1000}
 				/>
-				<div className="flex flex-col items-center justify-center h-full w-full">
-					<div className="max-w-md">
-						<h1 className="text-center text-4xl font-bold text-primary border-b pb-2 mb-10">
+				<div className="flex flex-col items-center justify-center h-[calc(100vh-60px)] w-full">
+					<div className="max-w-md border rounded-xl p-4">
+						<h1 className="text-center text-3xl font-bold text-primary border-b p-2 mb-10">
 							🎊🎊 Form Published 🎊🎊
 						</h1>
 						<h2 className="text-2xl">Share this form</h2>

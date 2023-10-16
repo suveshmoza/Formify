@@ -8,7 +8,7 @@ import {
 	ElementsType,
 	FormElement,
 	FormElementInstance,
-} from '../FormElements';
+} from '../formElements/FormElements';
 import useDesigner from '../hooks/useDesigner';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';

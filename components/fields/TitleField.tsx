@@ -4,7 +4,7 @@ import {
 	ElementsType,
 	FormElement,
 	FormElementInstance,
-} from '../FormElements';
+} from '../formElements/FormElements';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import { z } from 'zod';

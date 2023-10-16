@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 import { MdOutlinePreview } from 'react-icons/md';
-import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
-import useDesigner from './hooks/useDesigner';
-import { FormElements } from './FormElements';
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
+import useDesigner from '../hooks/useDesigner';
+import { FormElements } from '../formElements/FormElements';
 
 function PreviewDialogBtn() {
 	const { elements } = useDesigner();

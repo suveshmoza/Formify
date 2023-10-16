@@ -1,9 +1,6 @@
-import React from 'react';
-import { FormElements } from './FormElements';
-import SidebarBtnElement from './SidebarBtnElement';
-import useDesigner from './hooks/useDesigner';
-import FormElementsSidebar from './FormElementsSidebar';
-import PropertiesFormSidebar from './PropertiesFormSidebar';
+import useDesigner from '../hooks/useDesigner';
+import FormElementsSidebar from '../formElements/FormElementsSidebar';
+import PropertiesFormSidebar from '../properties/PropertiesFormSidebar';
 
 function DesignerSidebar() {
 	const { selectedElement } = useDesigner();

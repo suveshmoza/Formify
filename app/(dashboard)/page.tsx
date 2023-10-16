@@ -1,4 +1,4 @@
-import CreateFormBtn from '@/components/CreateFormBtn';
+import CreateFormBtn from '@/components/btn/CreateFormBtn';
 import { Separator } from '@/components/ui/separator';
 import { Suspense } from 'react';
 
